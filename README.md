@@ -3,7 +3,7 @@ elementHTMLChanged
 
 Synopsis:
 ---------
-    var myElementChanged = new HTMLElementChanged(Object options);
+    var myElementChanged = new elementHTMLChanged(Object options);
 
 Paramiters:
 -----------
@@ -50,11 +50,11 @@ Internal Methods:
     init: The initialisation method.
         Paramiters: Object options.
     checkChanged: The check function.
-        Paramiters: HTMLElementChanged object.
+        Paramiters: elementHTMLChanged object.
 
 Example:
 --------
-var myElementChanged = new HTMLElementChanged({
+var myElementChanged = new elementHTMLChanged({
     event: 'load',
     id: 'foo',
     before: function() {
