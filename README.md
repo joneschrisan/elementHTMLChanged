@@ -2,9 +2,11 @@ elementHTMLChanged
 ==================
 
 Synopsis:
+---------
     var myElementChanged = new HTMLElementChanged(Object options);
 
 Paramiters:
+-----------
     options:
         A Javascript Object with values contaning and combination of the following:
             event: String Event. The javascript event to add HTMLElementChanged.init() listener to.
@@ -33,6 +35,7 @@ Paramiters:
         Options MUST have id set to a non empty String.
 
 Internal values other than above options:
+-----------------------------------------
     oldValue: String HTML. Holds the old value for the check.
         Default: Empty String.
     to: Resorce ID for the interval Function;
@@ -43,13 +46,14 @@ Internal values other than above options:
         Default: False.
 
 Internal Methods:
+-----------------
     init: The initialisation method.
         Paramiters: Object options.
     checkChanged: The check function.
         Paramiters: HTMLElementChanged object.
 
 Example:
-
+--------
 var myElementChanged = new HTMLElementChanged({
     event: 'load',
     id: 'foo',
