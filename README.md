@@ -54,19 +54,20 @@ Internal Methods:
 
 Example:
 --------
-var myElementChanged = new elementHTMLChanged({
-    event: 'load',
-    id: 'foo',
-    before: function() {
-    	var foo = document.getElementById('foo');
-        if (foo.innerHTML == '') myElementChanged.beforeStop = true;
-    },
-    onChange: function() {
-        var foo = document.getElementById('foo');
-        if(foo.innerHTML == 'bar') return true;
-        return false;
-	},
-    cancelable: true,
-    addResetToId: 'btnrefresh',
-    microSeconds: 500
-});
+
+    var myElementChanged = new elementHTMLChanged({
+        event: 'load',
+        id: 'foo',
+        before: function() {
+            var foo = document.getElementById('foo');
+            if (foo.innerHTML == '') myElementChanged.beforeStop = true;
+        },
+        onChange: function() {
+            var foo = document.getElementById('foo');
+            if(foo.innerHTML == 'bar') return true;
+            return false;
+        },
+        cancelable: true,
+        addResetToId: 'btnrefresh',
+        microSeconds: 500
+    });
